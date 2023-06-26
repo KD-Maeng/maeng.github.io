@@ -118,8 +118,19 @@
 
 
 <p></p>
+<!----20230626 // Brity RPA Cridencial 파싱 Test--->
 <p></p>
-<input type="text" id="inputBox">
+<input type="password" id="inputBox">
+<button onclick="showPassword()">확인</button>
+<p></p>
+
+<script>
+  function showPassword() {
+    var password = document.getElementById("inputBox").value;
+    alert("입력한 비밀번호는: " + password);
+  }
+</script>
+
 <p></p>
 
 <button onclick="showAlert()">발주 접수 하기</button>
