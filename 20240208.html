@@ -11,48 +11,13 @@
       }
     }
   </style>
-  <script>
-    // image 폴더의 경로를 지정하세요
-    var imageDir = "rpa_test/image";
-    // image 폴더 안에 있는 파일 목록을 가져옵니다
-    var fileList = [];
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", imageDir, true);
-    xhr.responseType = "document";
-    xhr.onload = function() {
-      if (this.status == 200) {
-        var links = this.response.getElementsByTagName("a");
-        for (var i = 0; i < links.length; i++) {
-          var link = links[i].href;
-          // 파일 확장자를 구합니다
-          var fileExt = link.split(".").pop();
-          // 원하는 이미지 확장자의 배열입니다
-          var imageExts = ["png", "jpg", "jpeg", "jpe", "apng", "mng", "bmp"];
-          // 파일 확장자가 원하는 이미지 확장자에 포함되는지 확인합니다
-          if (imageExts.includes(fileExt)) {
-            // 파일 목록에 추가합니다
-            fileList.push(link);
-          }
-        }
-        // 파일 목록을 콘솔에 출력합니다
-        console.log(fileList);
-        // 각 파일에 대해 <img> 태그를 생성합니다
-        var gallery = document.getElementById("gallery");
-        for (var i = 0; i < fileList.length; i++) {
-          var img = document.createElement("img");
-          img.src = fileList[i];
-          img.alt = fileList[i].split("/").pop();
-          gallery.appendChild(img);
-        }
-      }
-    };
-    xhr.send();
-  </script>
 </head>
 <body>
   <h2>Image Gallery</h2>
   <div id="gallery">
-    <!-- 여기에 이미지가 동적으로 추가됩니다 -->
+    <!-- 이미지 파일의 경로와 이름을 정확하게 적어주세요 -->
+    <img src="image/IMG_8729.jpeg" alt="IMG_8729">
+    <img src="image/IMG_8730.jpeg" alt="IMG_8730">
   </div>
 </body>
 </html>
