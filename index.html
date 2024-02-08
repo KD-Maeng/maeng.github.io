@@ -1,5 +1,6 @@
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <style>
     .center {
       display: flex;
@@ -9,7 +10,7 @@
       height: 100vh;
     }
     table {
-      width: 80%;
+      width: 90%; /* 표의 너비를 90%로 설정합니다 */
       max-width: 500px;
       margin-top: 5%; /* 표의 상단 여백을 5%로 줄입니다 */
       border-collapse: collapse;
@@ -33,17 +34,14 @@
       background-color: #ddd;
     }
     img {
-      width: 100%;
+      width: 90%; /* 이미지의 너비를 90%로 설정합니다 */
       max-width: 500px;
       margin-bottom: 5%; /* 이미지와 표 사이의 여백을 5%로 설정합니다 */
     }
     @media only screen and (max-width: 600px) {
       /* 화면 너비가 600px 이하인 경우에 적용되는 스타일입니다 */
-      table {
-        width: 100%; /* 표의 너비를 100%로 설정합니다 */
-      }
-      img {
-        max-width: 100%; /* 이미지의 최대 너비를 100%로 설정합니다 */
+      table, img {
+        width: 100%; /* 표와 이미지의 너비를 100%로 설정합니다 */
       }
     }
   </style>
@@ -53,8 +51,7 @@
     <img src="image/main.png" alt="main image">
     <table>
       <tr>
-        <th>사순절 묵상집 바로가기</th>
-        <th></th>
+        <th colspan="2">사순절 묵상집 바로가기</th> <!-- 두 개의 열을 하나로 합치고 가운데 정렬합니다 -->
       </tr>
       <tr>
         <td><a href="1.html">1일차</a></td>
