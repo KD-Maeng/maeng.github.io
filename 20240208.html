@@ -3,21 +3,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     #gallery img {
-      width: 100%;
+      width: 90%; /* 이미지의 너비를 90%로 설정 */
+      margin: 0 auto; /* 이미지의 상하좌우 여백을 0과 자동으로 설정 */
+      border: 5px solid black; /* 이미지에 5픽셀 두께의 검은색 실선 테두리를 추가 */
+      max-width: 800px; /* 이미지의 최대 너비를 800픽셀로 설정 */
     }
     @media (max-width: 600px) {
       #gallery img {
-        width: 50%;
+        width: 50%; /* 모바일 환경에서는 이미지의 너비를 50%로 설정 */
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="logo"> <!-- 로고 이미지를 삽입 -->
+  </header>
   <h2>Image Gallery</h2>
   <div id="gallery">
     <!-- 이미지 파일의 경로와 이름을 정확하게 적어주세요 -->
     <img src="image/IMG_8729.jpeg" alt="IMG_8729">
     <img src="image/IMG_8730.jpeg" alt="IMG_8730">
   </div>
+  <footer>
+    <p>© 2024 by MSCH Gallery. All rights reserved.</p> <!-- 저작권 정보를 작성 -->
+  </footer>
 </body>
 </html>
