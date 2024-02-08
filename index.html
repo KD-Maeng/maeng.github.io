@@ -3,8 +3,9 @@
   <style>
     .center {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
     }
     table {
@@ -12,196 +13,56 @@
       max-width: 500px;
       margin-top: 20%;
       border-collapse: collapse;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+      border-radius: 10px;
+      overflow: hidden;
     }
     th, td {
-      border: 1px solid black;
       padding: 10px;
       text-align: center;
+      background-color: #f2f2f2;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #ddd;
+    }
+    img {
+      width: 100%;
+      max-width: 500px;
     }
   </style>
 </head>
 <body>
   <div class="center">
+    <img src="image/main.png" alt="main image">
     <table>
       <tr>
         <th>사순절 묵상집 목차</th>
         <th></th>
       </tr>
       <tr>
-        <td>1일차</td>
-        <td><a href="1.html">재의수요일</a></td>
+        <td><a href="1일차.html">1일차</a></td>
+        <td>재의수요일</td>
       </tr>
       <tr>
-        <td>2일차</td>
-        <td><a href="2.html">제목2</a></td>
+        <td><a href="2일차.html">2일차</a></td>
+        <td>제목2</td>
       </tr>
       <tr>
-        <td>3일차</a></td>
-        <td><a href="3.html">제목3</a></td>
+        <td><a href="3일차.html">3일차</a></td>
+        <td>제목3</td>
       </tr>
       <tr>
-        <td>4일차</td>
-        <td><a href="4.html">제목4</a></td>
+        <td><a href="4일차.html">4일차</a></td>
+        <td>제목4</td>
       </tr>
     </table>
   </div>
 </body>
 </html>
-
-
-
-
-<!--------style>
-  table {
-    border-collapse: collapse;
-  }
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-  }
-</style>
-
-<table>
-  <tr>
-    <th></th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-	<th>발주조회하기</th>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row1"></td>
-    <td>Row 1, Cell 1</td>
-    <td>Row 1, Cell 2</td>
-    <td>Row 1, Cell 3</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row2"></td>
-    <td>Row 2, Cell 1</td>
-    <td>Row 2, Cell 2</td>
-    <td>Row 2, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row3"></td>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row4"></td>
-    <td>Row 4, Cell 1</td>
-    <td>Row 4, Cell 2</td>
-    <td>Row 4, Cell 3</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row5"></td>
-    <td>Row 5, Cell 1</td>
-    <td>Row 5, Cell 2</td>
-    <td>Row 5, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-    <tr>
-    <td><input type="checkbox" id="row2"></td>
-    <td>Row 2, Cell 1</td>
-    <td>Row 2, Cell 2</td>
-    <td>Row 2, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row3"></td>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-    <td>Row 3, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row4"></td>
-    <td>Row 4, Cell 1</td>
-    <td>Row 4, Cell 2</td>
-    <td>Row 4, Cell 3</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row5"></td>
-    <td>Row 5, Cell 1</td>
-    <td>Row 5, Cell 2</td>
-    <td>Row 5, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row5"></td>
-    <td>Row 5, Cell 1</td>
-    <td>Row 5, Cell 2</td>
-    <td>Row 5, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="row5"></td>
-    <td>Row 5, Cell 1</td>
-    <td>Row 5, Cell 2</td>
-    <td>Row 5, Cell 3</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-	<tr>
-    <td><input type="checkbox" id="row5"></td>
-    <td>Row 5, Cell 1</td>
-    <td>Row 5, Cell 2</td>
-    <td>Row 5, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-	  <tr>
-    <td><input type="checkbox" id="row5"></td>
-    <td>Row 5, Cell 1</td>
-    <td>Row 5, Cell 2</td>
-    <td>Row 5, Cell 3</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-	<tr>
-    <td><input type="checkbox" id="row5"></td>
-    <td>Row 5, Cell 1</td>
-    <td>Row 5, Cell 2</td>
-    <td>Row 5, Cell 3 - 발주필요!</td>
-    <td><button onclick="showAlert()">발주조회</button></td>
-  </tr>
-</table>
-
-
-<p></p>
-<!----20230626 // Brity RPA Cridencial 파싱 Test--->
-<!------p></p>
-
-<br>
-
-<input type="password" id="inputBox">
-비밀번호형 인풋박스 <button onclick="showPassword()">확인</button>
-<p></p>
-
-<p></p>
-<input id="inputBox2">
-일반 인풋박스 <button onclick="showPassword()">확인</button>
-<p></p>
-
-<script>
-  function showPassword() {
-    var password = document.getElementById("inputBox").value;
-    alert("입력한 비밀번호는: " + password);
-  }
-</script>
-
-<p></p>
-
-<button onclick="showAlert()">발주 접수 하기</button>
-
-<script>
-  function showAlert() {
-    alert("발주가 확인되었습니다.");
-  }
-</script----->
-
-
-
-
