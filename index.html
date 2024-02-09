@@ -1,3 +1,18 @@
+<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+<div id="vrview"></div>
+<script>
+  window.addEventListener('load', onVrViewLoad)
+  function onVrViewLoad() {
+    var vrView = new VRView.Player('#vrview', {
+      image: 'https://th.bing.com/th/id/OIP.viY7i5Ff6UYDtYM6PLGaqgHaDt?rs=1&pid=ImgDetMain',
+      is_stereo: true
+    });
+  }
+</script>
+
+
+
+
 <html>
 
   <head>
