@@ -1,7 +1,7 @@
 
 import { EventDispatcher, MOUSE, Quaternion, Spherical, TOUCH, Vector2, Vector3 } from './three.module.js';
 
-
+import * as THREE from './three.module.js';
 
 /* three-orbitcontrols addendum */ var THREE = require('three');
 /**
