@@ -1,198 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Panorama Viewer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <title>Group Input</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div id="panorama"></div>
-    <script>
-    pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "1.gif"
-    });
-    </script>
-</body>
-</html>
+    <table id="inputTable">
+        <tr>
+            <th>이름</th>
+            <th>오늘의 말씀이 어땠나요?</th>
+            <th>감사제목!</th>
+            <th>중보기도를 위한 각자의 기도제목</th>
+        </tr>
+        <tr>
+            <td>맹경도</td>
+            <td><input type="text" onchange="updateInput('맹경도', 'message', this.value)"></td>
+            <td><input type="text" onchange="updateInput('맹경도', 'thanks', this.value)"></td>
+            <td><input type="text" onchange="updateInput('맹경도', 'prayer', this.value)"></td>
+        </tr>
+        <tr>
+            <td>이종수</td>
+            <td><input type="text" onchange="updateInput('이종수', 'message', this.value)"></td>
+            <td><input type="text" onchange="updateInput('이종수', 'thanks', this.value)"></td>
+            <td><input type="text" onchange="updateInput('이종수', 'prayer', this.value)"></td>
+        </tr>
 
+        <tr>
+            <td>김혜진</td>
+            <td><input type="text" onchange="updateInput('김혜진', 'message', this.value)"></td>
+            <td><input type="text" onchange="updateInput('김혜진', 'thanks', this.value)"></td>
+            <td><input type="text" onchange="updateInput('김혜진', 'prayer', this.value)"></td>
+        </tr>
 
-
-
-
-
-
-
-
-<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-<div id="vrview"></div>
-<script>
-  window.addEventListener('load', onVrViewLoad)
-  function onVrViewLoad() {
-    var vrView = new VRView.Player('#vrview', {
-      image: 'https://th.bing.com/th/id/OIP.viY7i5Ff6UYDtYM6PLGaqgHaDt?rs=1&pid=ImgDetMain',
-      is_stereo: true
-    });
-  }
-</script>
-
-
-
-
-<html>
-
-  <head>
-
-  </head>
-
-  <body>
-
-      <div id="vrview">
-
-        hi
-
-        <iframe src="//storage.googleapis.com/vrview/2.0/index.html?image=//storage.googleapis.com/vrview/examples/coral.jpg&is_stereo=true">
-
-        </iframe>
-
-      </div>
-
-  </body>
-
-</html>
-
-
-
-
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    h2 {
-      text-align: center; /* 텍스트를 가운데 정렬 */
-      font-family: "Malgun Gothic", sans-serif; /* 글꼴을 맑은 고딕으로 설정 */
-    }
-    #gallery {
-      display: flex; /* #gallery 요소를 flex 컨테이너로 만듭니다 */
-      flex-direction: column; /* #gallery 요소의 자식 요소들을 세로 방향으로 배치합니다 */
-      justify-content: center; /* #gallery 요소의 자식 요소들을 가운데 정렬합니다 */
-      max-width: 400px; /* PC 버전에서 #gallery 요소의 최대 너비를 400픽셀로 설정 */
-      margin: 0 auto; /* #gallery 요소를 화면 가운데에 위치시킵니다 */
-    }
-    #gallery img {
-      width: 100%; /* 이미지의 너비를 100%로 설정 */
-      border: 0px solid black; /* 이미지에 5픽셀 두께의 검은색 실선 테두리를 추가 */
-    }
-    .back-button {
-      position: absolute; /* 뒤로가기 버튼의 위치를 절대값으로 설정 */
-      top: 10px; /* 뒤로가기 버튼을 상단에서 10픽셀 떨어진 위치에 배치 */
-      left: 10px; /* 뒤로가기 버튼을 좌측에서 10픽셀 떨어진 위치에 배치 */
-      padding: 10px; /* 뒤로가기 버튼의 패딩을 10픽셀로 설정 */
-      text-decoration: none; /* 뒤로가기 버튼의 텍스트에 밑줄을 없애줍니다 */
-      color: white; /* 뒤로가기 버튼의 텍스트 색상을 흰색으로 설정 */
-      background-color: #4CAF50; /* 뒤로가기 버튼의 배경색을 설정 */
-      border-radius: 5px; /* 뒤로가기 버튼의 모서리를 둥글게 만듭니다 */
-    }
-  </style>
-</head>
-<body>
-  <header>
-    
-  </header>
-  <div id="gallery">  
-    </a><img src="image_main/main_logo.png">
-    <a href = "4.html"> <img src="image_main/4.png"> </a>
-    <a href = "3.html"> <img src="image_main/3.png"> </a>
-    <a href = "2.html"> <img src="image_main/2.png"> </a>
-    <a href = "1.html"> <img src="image_main/1.png"> </a>
-    <img src="image_main/end.png">
-  </div>
-  <footer>
-    <p>© 2024 by MSCH. All rights reserved.</p> <!-- 저작권 정보를 작성 -->
-  </footer>
-</body>
-
-
-    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmsch-ebook.com&count_bg=%2379C83D&title_bg=%23555555&icon=powerbi.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
-</html>
-
-
-
-
-
-
-<!------html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <style>
-    .center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    table {
-      width: 90%; /* 표의 너비를 90%로 설정합니다 */
-      max-width: 500px;
-      margin-top: 5%; /* 표의 상단 여백을 5%로 줄입니다 */
-      border-collapse: collapse;
-      box-shadow: 0 0 20px rgba(0,0,0,0.15);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    th, td {
-      padding: 10px;
-      text-align: center;
-      background-color: #f2f2f2;
-    }
-    th {
-      background-color: #4CAF50;
-      color: white;
-    }
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-    tr:hover {
-      background-color: #ddd;
-    }
-    img {
-      width: 90%; /* 이미지의 너비를 90%로 설정합니다 */
-      max-width: 500px;
-      margin-bottom: 5%; /* 이미지와 표 사이의 여백을 5%로 설정합니다 */
-    }
-    @media only screen and (max-width: 600px) {
-      /* 화면 너비가 600px 이하인 경우에 적용되는 스타일입니다 */
-      table, img {
-        width: 100%; /* 표와 이미지의 너비를 100%로 설정합니다 */
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="center">
-    <img src="image/main.png" alt="main image">
-    <table>
-      <tr>
-        <th colspan="2">사순절 묵상집 바로가기</th> <!-- 두 개의 열을 하나로 합치고 가운데 정렬합니다 -->
-      <!----/tr>
-      <tr>
-        <td><a href="1.html">1일차</a></td>
-        <td>재의수요일</td>
-      </tr>
-      <tr>
-        <td><a href="2.html">2일차</a></td>
-        <td>제목2</td>
-      </tr>
-      <tr>
-        <td><a href="3.html">3일차</a></td>
-        <td>제목3</td>
-      </tr>
-      <tr>
-        <td><a href="4.html">4일차</a></td>
-        <td>제목4</td>
-      </tr>
+        <tr>
+            <td>조정원</td>
+            <td><input type="text" onchange="updateInput('조정원', 'message', this.value)"></td>
+            <td><input type="text" onchange="updateInput('조정원', 'thanks', this.value)"></td>
+            <td><input type="text" onchange="updateInput('조정원', 'prayer', this.value)"></td>
+        </tr>
     </table>
-  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
