@@ -12,33 +12,9 @@
             <th>감사제목!</th>
             <th>중보기도를 위한 각자의 기도제목</th>
         </tr>
-        <tr>
-            <td>맹경도</td>
-            <td><input type="text" onchange="updateInput('맹경도', 'message', this.value)"></td>
-            <td><input type="text" onchange="updateInput('맹경도', 'thanks', this.value)"></td>
-            <td><input type="text" onchange="updateInput('맹경도', 'prayer', this.value)"></td>
-        </tr>
-        <tr>
-            <td>이종수</td>
-            <td><input type="text" onchange="updateInput('이종수', 'message', this.value)"></td>
-            <td><input type="text" onchange="updateInput('이종수', 'thanks', this.value)"></td>
-            <td><input type="text" onchange="updateInput('이종수', 'prayer', this.value)"></td>
-        </tr>
-
-        <tr>
-            <td>김혜진</td>
-            <td><input type="text" onchange="updateInput('김혜진', 'message', this.value)"></td>
-            <td><input type="text" onchange="updateInput('김혜진', 'thanks', this.value)"></td>
-            <td><input type="text" onchange="updateInput('김혜진', 'prayer', this.value)"></td>
-        </tr>
-
-        <tr>
-            <td>조정원</td>
-            <td><input type="text" onchange="updateInput('조정원', 'message', this.value)"></td>
-            <td><input type="text" onchange="updateInput('조정원', 'thanks', this.value)"></td>
-            <td><input type="text" onchange="updateInput('조정원', 'prayer', this.value)"></td>
-        </tr>
+        <!-- JavaScript가 여기에 행을 추가합니다. -->
     </table>
+    <button onclick="saveInputs()">저장</button>
 
     <script src="script.js"></script>
 </body>
